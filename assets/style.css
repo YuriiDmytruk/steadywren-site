@@ -196,3 +196,19 @@ header.bar, footer.bar { width: 100%; }
   .cards .card img { width: 100%; max-width: none; aspect-ratio: 2 / 1; object-fit: contain; background: #14171F; }
   .cards .card > div { padding: 0 20px 20px; }
 }
+
+/* Badges never overflow: logos shrink to fit, long labels wrap inside the badge */
+.chip > span { overflow: hidden; min-width: 0; }
+.chip > span .logo { display: flex; min-width: 0; max-width: 100%; }
+.chip > span .logo img { max-width: 100%; object-fit: contain; }
+@media (max-width: 600px) {
+  .modal form { padding: 22px 18px; }
+  .modal h2 { font-size: 24px; }
+  .chips { gap: 8px; }
+  .chip > span { height: 50px; padding: 0 10px; gap: 6px; white-space: normal; text-align: center; line-height: 1.15; font-size: 14px; }
+  .chip > span .logo img { height: 16px; }
+  .chip > span .logo.full img { height: auto; max-height: 18px; }
+  .chip > span .logo:not(.full) img { height: 20px; }
+  .chip > span .code { font-size: 14px; }
+}
+.chip > span .code { white-space: nowrap; flex: none; }
