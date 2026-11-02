@@ -1,0 +1,16 @@
+# Cloudflare Worker for the steadywren.com contact form. Deploy: see worker/README.md.
+name = "steadywren-contact"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+compatibility_flags = ["nodejs_compat"]   # Buffer for the MIME encoding
+
+routes = [{ pattern = "api.steadywren.com", custom_domain = true }]
+
+# Email Routing must be enabled on steadywren.com. The recipient (TO) is a verified Email Routing destination
+# address; it is a Worker secret (`wrangler secret put TO`), never written in this public repo.
+[[send_email]]
+name = "CONTACT_EMAIL"
+
+[vars]
+FROM = "contact@steadywren.com"
+ALLOWED_ORIGINS = "https://steadywren.com,https://www.steadywren.com"

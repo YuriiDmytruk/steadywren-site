@@ -1,0 +1,80 @@
+{
+  "platforms": [
+    {
+      "id": "apify",
+      "name": "Apify",
+      "tagline": "Ready-made scrapers with analysis built in. Run them in the cloud, pay per result.",
+      "store": "https://apify.com/steadywren",
+      "accent": "#2FC28A",
+      "status": "live",
+      "logo": {
+        "light": "apify-logo-dark.svg",
+        "dark": "apify-logo-white.svg",
+        "full": true,
+        "source": "https://www.apify.com/resources/brand (official brand page)"
+      }
+    },
+    {
+      "id": "mcpize",
+      "name": "MCPize",
+      "tagline": "Paid MCP servers: live market data your AI assistant can call as tools.",
+      "store": null,
+      "accent": "#8B7CFF",
+      "status": "soon",
+      "logo": {
+        "light": "mcpize-logo.webp",
+        "dark": "mcpize-logo.webp",
+        "full": false,
+        "source": "https://mcpize.com header logo (no brand kit published)"
+      }
+    },
+    {
+      "id": "atlassian",
+      "name": "Atlassian Marketplace",
+      "tagline": "Forge apps for Jira and Confluence teams.",
+      "store": null,
+      "accent": "#4A8BF5",
+      "status": "soon",
+      "logo": {
+        "light": "atlassian-logo-brand.svg",
+        "dark": "atlassian-logo-inverse.svg",
+        "full": true,
+        "source": "https://atlassian.design/foundations/logos (official zip, unmodified). Owner's decision 2026-11-02 despite the Marketplace partner guideline; switch to the official Marketplace badge once the first app is listed."
+      }
+    }
+  ],
+  "products": [
+    {
+      "platform": "apify",
+      "title": "App Store Reviews & Release Health",
+      "description": "App Store reviews plus a competitor report: rating by app version with bad-release alerts, what competitors shipped and how users reacted, complaint topics, subscription prices by country and chart ranks.",
+      "keywords": "ios iphone apple app store reviews ratings releases competitors",
+      "url": "https://apify.com/steadywren/apple-app-store-reviews-scraper",
+      "image": "apple-app-store-reviews-scraper.png"
+    },
+    {
+      "platform": "apify",
+      "title": "Google Play Reviews & Release Health",
+      "description": "Google Play reviews plus an app report: rating by app version with bad-release alerts, developer reply rate and time, complaint topics and spikes, installs per day, listing and price changes.",
+      "keywords": "android google play store reviews ratings installs releases",
+      "url": "https://apify.com/steadywren/google-play-reviews-scraper",
+      "image": "google-play-reviews-scraper.png"
+    },
+    {
+      "platform": "apify",
+      "title": "Flippa Listings Scraper",
+      "description": "Find underpriced businesses on Flippa. Every SaaS, ecommerce, content or app listing is rated below, at or above market against similar businesses for sale now and the multiples similar ones sold at.",
+      "keywords": "flippa buy business saas ecommerce website marketplace valuation multiples",
+      "url": "https://apify.com/steadywren/flippa-listings-scraper",
+      "image": "flippa-listings-scraper.png"
+    },
+    {
+      "platform": "apify",
+      "title": "Empire Flippers Listings Scraper",
+      "description": "Find underpriced online businesses on Empire Flippers. Every listing is rated against about 2,700 real sold deals of the same type and size, with fair value, typical days to sell and risk flags.",
+      "keywords": "empire flippers buy online business valuation sold deals multiples",
+      "url": "https://apify.com/steadywren/empire-flippers-listings-scraper",
+      "image": "empire-flippers-listings-scraper.png"
+    }
+  ]
+}

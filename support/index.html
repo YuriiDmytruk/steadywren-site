@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support - Steadywren</title>
+<meta name="description" content="Steadywren support.">
+<meta property="og:title" content="Support - Steadywren">
+<meta property="og:description" content="Steadywren support.">
+<meta property="og:image" content="https://steadywren.com/assets/og-image.png">
+<link rel="icon" type="image/png" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js" defer></script>
+</head>
+<body>
+<header class="bar">
+  <a class="lockup" href="../"><img src="../assets/steadywren-mark.svg" alt="" width="40" height="40"><span>steady<b>wren</b></span></a>
+  <nav><a href="../#platforms">Products</a><a href="../privacy/">Privacy</a><a href="../terms/">Terms</a><a href="../support/">Support</a><button class="link" type="button" data-contact>Contact</button></nav>
+</header>
+<main>
+<article class="doc">
+<h1>Support</h1>
+<p>Questions, bugs or feature requests for any Steadywren product: write to <strong>support@steadywren.com</strong>, or open an issue on the product's page in Apify Store.</p>
+<p>Please include:</p>
+<ul><li>the product name;</li><li>the run ID or a link to the failed run, if there is one;</li><li>what you expected and what you got (the input you used, a few example rows).</li></ul>
+<p>Every message gets a real answer from the person who built the product. Broken results caused by a change on the source website are fixed first.</p>
+</article>
+</main>
+<footer class="bar">
+  <span>© 2026 Steadywren</span>
+  <nav><a href="../privacy/">Privacy</a><a href="../terms/">Terms</a><a href="../support/">Support</a><a href="mailto:support@steadywren.com">support@steadywren.com</a></nav>
+</footer>
+<dialog id="contact" class="modal" aria-labelledby="contact-title">
+  <form id="contact-form" method="dialog" data-endpoint="https://api.steadywren.com/contact" data-email="support@steadywren.com">
+    <button class="close" type="button" data-close aria-label="Close">×</button>
+    <h2 id="contact-title">Let's build something</h2>
+    <p class="muted">Tell me what you need - a scraper, an MCP server, an Atlassian app or a custom JavaScript
+    solution - and I will get back to you.</p>
+    <fieldset><legend>What is it about?</legend><div class="chips"><label class="chip"><input type="radio" name="topic" value="Apify" required><span><picture class="logo full"><source srcset="../assets/platforms/apify-logo-white.svg" media="(prefers-color-scheme: dark)"><img src="../assets/platforms/apify-logo-dark.svg" alt="Apify"></picture></span></label><label class="chip"><input type="radio" name="topic" value="MCPize" required><span><picture class="logo"><source srcset="../assets/platforms/mcpize-logo.webp" media="(prefers-color-scheme: dark)"><img src="../assets/platforms/mcpize-logo.webp" alt="MCPize"></picture><span>MCPize</span></span></label><label class="chip"><input type="radio" name="topic" value="Atlassian Marketplace" required><span><picture class="logo full"><source srcset="../assets/platforms/atlassian-logo-inverse.svg" media="(prefers-color-scheme: dark)"><img src="../assets/platforms/atlassian-logo-brand.svg" alt="Atlassian Marketplace"></picture></span></label><label class="chip"><input type="radio" name="topic" value="Custom JS solution" required><span><b class="code" aria-hidden="true">{ }</b><span>Custom JS solution</span></span></label></div></fieldset>
+    <label class="field">Your idea<textarea name="message" rows="5" required minlength="10"
+      placeholder="What should it do, for whom, and by when?"></textarea></label>
+    <label class="field">Your email<input name="email" type="email" required autocomplete="email"
+      placeholder="you@company.com"></label>
+    <label class="hp" aria-hidden="true">Leave empty<input name="website" tabindex="-1" autocomplete="off"></label>
+    <button class="button" type="submit">Send</button>
+    <p class="status" role="status" aria-live="polite"></p>
+  </form>
+</dialog>
+</body>
+</html>

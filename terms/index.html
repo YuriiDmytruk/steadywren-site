@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>End User License Agreement - Steadywren</title>
+<meta name="description" content="Steadywren terms.">
+<meta property="og:title" content="End User License Agreement - Steadywren">
+<meta property="og:description" content="Steadywren terms.">
+<meta property="og:image" content="https://steadywren.com/assets/og-image.png">
+<link rel="icon" type="image/png" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js" defer></script>
+</head>
+<body>
+<header class="bar">
+  <a class="lockup" href="../"><img src="../assets/steadywren-mark.svg" alt="" width="40" height="40"><span>steady<b>wren</b></span></a>
+  <nav><a href="../#platforms">Products</a><a href="../privacy/">Privacy</a><a href="../terms/">Terms</a><a href="../support/">Support</a><button class="link" type="button" data-contact>Contact</button></nav>
+</header>
+<main>
+<article class="doc">
+<h1>End User License Agreement</h1>
+<p>Effective date: 2026-11-02</p>
+<p>This agreement is between you and Steadywren for the use of our products (Apify Actors and other data tools listed on <a href="https://steadywren.com">https://steadywren.com</a>), distributed through marketplaces such as Apify. By using the product you accept this agreement and the terms of the marketplace (currently Apify); where they conflict, the platform's terms apply.</p>
+<h2>License</h2>
+<p>We grant you a non-exclusive, non-transferable license to use the product through the marketplace (currently Apify) for your own or your organization's purposes, for as long as you have a valid subscription or pay for usage there.</p>
+<p>You may not copy, resell, reverse engineer or redistribute the product itself, or use it to break the law or the terms of the websites and services it accesses.</p>
+<h2>Your responsibilities</h2>
+<ul><li>You decide what data you collect and how you use it. You are responsible for having a legal basis for that use (for example under GDPR) and for respecting the terms of the source websites.</li><li>Do not use the product to collect personal data of private individuals without a lawful reason.</li></ul>
+<h2>Pricing and refunds</h2>
+<p>Prices are shown on the marketplace (currently Apify) and charged by the platform. Refunds follow the platform's refund policy; contact <a href="mailto:support@steadywren.com">support@steadywren.com</a> if a run charged you for results you did not get and we will help.</p>
+<h2>Availability and changes</h2>
+<p>Third-party websites change without notice, so results can be temporarily incomplete or unavailable. We fix such breaks as soon as we reasonably can but do not guarantee uninterrupted service. We may update or retire the product; we announce retirement on <a href="https://steadywren.com">https://steadywren.com</a> at least 30 days ahead.</p>
+<h2>No warranty</h2>
+<p>The product is provided "as is". Data comes from public sources and may be inaccurate or incomplete; it is not legal, financial or HR advice.</p>
+<h2>Limitation of liability</h2>
+<p>To the extent allowed by law, our total liability is limited to the amount you paid for the product in the 3 months before the claim. We are not liable for indirect or consequential damages.</p>
+<h2>Contact</h2>
+<p><a href="mailto:support@steadywren.com">support@steadywren.com</a></p>
+</article>
+</main>
+<footer class="bar">
+  <span>© 2026 Steadywren</span>
+  <nav><a href="../privacy/">Privacy</a><a href="../terms/">Terms</a><a href="../support/">Support</a><a href="mailto:support@steadywren.com">support@steadywren.com</a></nav>
+</footer>
+<dialog id="contact" class="modal" aria-labelledby="contact-title">
+  <form id="contact-form" method="dialog" data-endpoint="https://api.steadywren.com/contact" data-email="support@steadywren.com">
+    <button class="close" type="button" data-close aria-label="Close">×</button>
+    <h2 id="contact-title">Let's build something</h2>
+    <p class="muted">Tell me what you need - a scraper, an MCP server, an Atlassian app or a custom JavaScript
+    solution - and I will get back to you.</p>
+    <fieldset><legend>What is it about?</legend><div class="chips"><label class="chip"><input type="radio" name="topic" value="Apify" required><span><picture class="logo full"><source srcset="../assets/platforms/apify-logo-white.svg" media="(prefers-color-scheme: dark)"><img src="../assets/platforms/apify-logo-dark.svg" alt="Apify"></picture></span></label><label class="chip"><input type="radio" name="topic" value="MCPize" required><span><picture class="logo"><source srcset="../assets/platforms/mcpize-logo.webp" media="(prefers-color-scheme: dark)"><img src="../assets/platforms/mcpize-logo.webp" alt="MCPize"></picture><span>MCPize</span></span></label><label class="chip"><input type="radio" name="topic" value="Atlassian Marketplace" required><span><picture class="logo full"><source srcset="../assets/platforms/atlassian-logo-inverse.svg" media="(prefers-color-scheme: dark)"><img src="../assets/platforms/atlassian-logo-brand.svg" alt="Atlassian Marketplace"></picture></span></label><label class="chip"><input type="radio" name="topic" value="Custom JS solution" required><span><b class="code" aria-hidden="true">{ }</b><span>Custom JS solution</span></span></label></div></fieldset>
+    <label class="field">Your idea<textarea name="message" rows="5" required minlength="10"
+      placeholder="What should it do, for whom, and by when?"></textarea></label>
+    <label class="field">Your email<input name="email" type="email" required autocomplete="email"
+      placeholder="you@company.com"></label>
+    <label class="hp" aria-hidden="true">Leave empty<input name="website" tabindex="-1" autocomplete="off"></label>
+    <button class="button" type="submit">Send</button>
+    <p class="status" role="status" aria-live="polite"></p>
+  </form>
+</dialog>
+</body>
+</html>

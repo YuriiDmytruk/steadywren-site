@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Steadywren mark: wren head in profile, looking up. Source of truth - edit here, re-export PNGs (brand/README.md). -->
+  <defs>
+    <clipPath id="tile"><rect width="512" height="512" rx="112"/></clipPath>
+    <clipPath id="body">
+      <path id="silhouette" d="M112 160 C150 128 196 114 252 114 C318 114 380 128 424 170 C452 196 468 226 486 262 C500 290 530 316 560 330 L560 560 L144 560 C146 470 150 400 148 340 C147 290 140 250 128 214 C121 194 112 178 112 160 Z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#tile)">
+    <rect width="512" height="512" fill="#A9B5A2"/>
+    <!-- beak: tilted up, rounded tip -->
+    <path d="M122 150 C100 145 78 139 56 134 C44 131 39 144 50 149 C72 158 96 167 122 176 Z" fill="#14171F" stroke="#14171F" stroke-width="6" stroke-linejoin="round"/>
+    <use href="#silhouette" xlink:href="#silhouette" fill="#1E5BD8"/>
+    <g clip-path="url(#body)">
+      <!-- crown sheen -->
+      <path d="M176 134 C222 118 290 116 348 132 C300 130 240 134 190 148 C178 150 170 140 176 134 Z" fill="#4A8BF5"/>
+      <!-- mask: from the eye back over the ear, lower lobe under the cheek -->
+      <path d="M214 176 C252 166 304 158 352 162 C410 168 458 206 470 254 C480 296 458 330 418 340 C370 352 318 352 276 344 C240 338 206 318 202 300 C200 290 214 284 236 284 C258 284 268 274 264 258 C258 236 240 214 222 202 C212 194 206 182 214 176 Z" fill="#14171F" stroke="#14171F" stroke-width="6" stroke-linejoin="round"/>
+      <!-- cheek: light blue with a soft wavy bottom -->
+      <path d="M146 210 C182 198 236 204 262 222 C276 232 272 252 258 260 C246 266 236 262 226 268 C214 274 204 266 192 270 C178 274 166 268 156 262 C142 252 134 220 146 210 Z" fill="#45C9F4"/>
+      <!-- shoulder sheen -->
+      <path d="M330 392 C380 370 444 374 500 404 C474 418 430 412 392 420 C360 426 336 412 330 392 Z" fill="#4A8BF5" opacity="0.7"/>
+      <!-- black chest at the bottom -->
+      <path d="M130 478 C176 450 236 436 290 438 C336 440 370 462 392 512 L392 560 L130 560 Z" fill="#14171F"/>
+    </g>
+    <!-- lores: one black stroke from the beak base to the eye, over the forehead edge so no blue gap shows -->
+    <path d="M108 154 C140 160 174 170 204 178 C208 186 206 194 200 196 C170 188 138 180 110 174 Z" fill="#14171F" stroke="#14171F" stroke-width="4" stroke-linejoin="round"/>
+    <!-- eye -->
+    <circle cx="214" cy="186" r="18" fill="#1E5BD8"/>
+    <circle cx="214" cy="186" r="11.5" fill="#14171F"/>
+    <circle cx="218" cy="182" r="3.8" fill="#FFFFFF"/>
+  </g>
+</svg>
